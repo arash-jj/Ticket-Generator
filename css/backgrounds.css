@@ -1,0 +1,36 @@
+main{
+    width: 100%;
+    height: 100%;
+    background-image: 
+    url("../assets/images/pattern-lines.svg"),
+    url("../assets/images/pattern-squiggly-line-bottom-desktop.svg"),
+    url("../assets/images/pattern-squiggly-line-top.svg"),
+    url("../assets/images/pattern-circle.svg"),
+    url("../assets/images/pattern-circle.svg"),
+    url("../assets/images/background-desktop.png")
+    ;
+    background-position: 
+    top,
+    bottom left,
+    top 70px right,
+    left 50px top -80px,
+    bottom 20% right 23%,
+    center
+    ;
+    background-repeat: 
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat
+    ;
+    background-size: 
+    100% 100%,
+    825px 400px,
+    446px 208px,
+    217px 217px,
+    217px 217px,
+    100% 100%
+    ;
+}
