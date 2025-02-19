@@ -29,6 +29,41 @@
               </p>
             </div>
           </div>
+          <!-- formSection -->
+          <div class="formContainer">
+            <form action="#">
+              <!-- UploadAvatarSection -->
+              <label for="fileInput">Upload Avatar</label>
+              <div class="dropZone">
+                <img src="./assets/images/icon-upload.svg" alt="upload">
+                <p>Drag and drop or click to upload</p>
+                <input type="file" id="fileInput" name="fileInput" accept="image/png, image/jpeg">
+              </div>
+              <div class="attentionNote">
+                <span class="attentionLogo">
+                  <img src="assets/images/icon-info.svg" alt="info">
+                </span>
+                <span class="attentionText">Upload your photo(JPG or PNG,max size: 500KB).</span>
+              </div>
+              <!-- NameInputSection -->
+              <div class="formGroup">
+                <label for="nameInput">Full Name</label>
+                <input type="text" name="nameInput" id="nameInput">
+              </div>
+              <!-- EmailInputSection -->
+              <div class="formGroup">
+                <label for="emailInput">Email Address</label>
+                <input placeholder="example@email.com" type="email" name="emailInput" id="emailInput">
+              </div>
+              <!-- GitHubUsernameInputSection -->
+              <div class="formGroup">
+                <label for="GitHubName">GitHun Username</label>
+                <input placeholder="@yourusername" type="email" name="GitHubName" id="GitHubName">
+              </div>
+              <!-- SubmitBtn -->
+              <button class="btn">Generate My Ticket</button>
+            </form>
+          </div>
         </div>
       </div>
   </main>

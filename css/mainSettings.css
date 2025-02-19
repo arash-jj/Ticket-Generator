@@ -12,7 +12,7 @@ body{
     justify-content: center; 
     align-items: center;
     overflow: auto;
-    font-family: inconsolate ;
+    font-family: inconsolate-medium ;
 }
 body, html {
     height: 100%;
@@ -22,7 +22,7 @@ main{
     text-align: center;
     max-width: 100%;
     padding: 20px;
-    overflow: hidden;
+    overflow-x: auto;
 }
 .contentWrapper{
     width: 100%;
@@ -34,16 +34,25 @@ main{
     width: 60%;
     height: auto;
 }
+input{
+    font-family: inconsolate-regular ;
+}
 @font-face {
-    font-family: inconsolate ;
+    font-family: inconsolate-medium ;
     src: url(../assets/fonts/static/Inconsolata-Medium.ttf);
+}
+@font-face {
+    font-family: inconsolate-regular ;
+    src: url(../assets/fonts/static/Inconsolata-Regular.ttf);
 }
 :root{
     --Neutral0: hsl(0, 0%, 100%);
     --Neutral300: hsl(252, 6%, 83%);
     --Neutral500: hsl(245, 15%, 58%);
     --Neutral700: hsl(245, 19%, 35%);
+    --Neutral800: hsla(245, 18%, 29%, 0.452);
     --Neutral900: hsl(248, 70%, 10%);
+    --InputBg: rgba(255, 255, 255, 0.055);
     --Orange500: hsl(7, 88%, 67%);
     --Orange700: hsl(7, 71%, 60%);
     --Gradient: hsl(7, 86%, 67%) to hsl(0, 0%, 100%);

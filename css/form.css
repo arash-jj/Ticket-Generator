@@ -1,0 +1,83 @@
+.formContainer{
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+form{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+form label {
+    color: var(--Neutral300);
+    text-align: start;
+    margin-block: 7px;
+}
+.dropZone{
+    background-color: var(--InputBg);
+    border: 2px dashed var(--Neutral500);
+    border-radius: 8px;
+    padding: 20px 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+.dropZone:hover{
+    background-color: var(--Neutral700);
+}
+.dropZone.dragOver {
+    background-color: var(--Neutral700);
+}
+.dropZone img {
+    border-radius: 8px;
+    padding: 6px;
+    background-color: var(--Neutral800);
+}
+.dropZone p {
+    color: var(--Neutral500);
+}
+input[type=file]{
+    display: none;
+}
+.attentionNote{
+    color: var(--Neutral500);
+    display: flex;
+    justify-content: start;
+    margin-top: 7px;
+}
+.attentionLogo{
+    margin-right: 5px;
+}
+.attentionText{
+    font-size: 0.75rem;
+    margin-top: 2px;
+}
+.formGroup{
+    margin-block: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.formGroup input{
+    background-color: var(--InputBg);
+    color: var(--Neutral300);
+    outline: none;
+    border: 1px solid var(--Neutral500);
+    border-radius: 8px;
+    padding: 10px 7px;
+}
+form input:focus,form btn:hover{
+    box-shadow: 0 0 0 5px transparent,0 0 0 1.5px var(--Neutral500);
+}
+.btn{
+    margin-top: 10px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    background-color: var(--Orange500);
+    font: bolder;
+}
