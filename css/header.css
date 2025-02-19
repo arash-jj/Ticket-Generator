@@ -1,0 +1,15 @@
+.header{
+    width: 100%;
+    height: 100%;
+}
+.headerPartOne img {
+    margin-block: 10px 15px;
+}
+.headerPartTwo{
+    font-size: 3.4rem;
+    color: var(--Neutral0);
+}
+.headerPartThree{
+    font-size: 1.2rem;
+    color: var(--Neutral500);
+}
