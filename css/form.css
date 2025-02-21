@@ -24,6 +24,10 @@ form label {
     text-align: center;
     cursor: pointer;
     transition: all 0.4s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .dropZone:hover{
     background-color: var(--Neutral700);
@@ -32,12 +36,31 @@ form label {
     background-color: var(--Neutral700);
 }
 .dropZone img {
+    width: 42px;
+    height: 42px;
     border-radius: 8px;
-    padding: 6px;
+    margin-bottom: 7px;
     background-color: var(--Neutral800);
 }
 .dropZone p {
     color: var(--Neutral500);
+}
+.dargZoneBtns{
+    display: none;
+}
+.dargZoneBtns button{
+    margin-top: 5px;
+    padding: 3px 4px;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    color: var(--Neutral300);
+    background-color: var(--Neutral700);
+}
+#removeImg{
+    text-decoration: underline;
 }
 input[type=file]{
     display: none;
@@ -47,6 +70,15 @@ input[type=file]{
     display: flex;
     justify-content: start;
     margin-top: 7px;
+}
+.attentionNote.error{
+    color: var(--Orange700);
+    display: flex;
+    justify-content: start;
+    margin-top: 7px;
+}
+#emailError{
+    display: none;
 }
 .attentionLogo{
     margin-right: 5px;

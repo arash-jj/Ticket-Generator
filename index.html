@@ -31,15 +31,19 @@
           </div>
           <!-- formSection -->
           <div class="formContainer">
-            <form action="#">
+            <form autocomplete="off" action="#">
               <!-- UploadAvatarSection -->
               <label for="fileInput">Upload Avatar</label>
               <div class="dropZone">
-                <img src="./assets/images/icon-upload.svg" alt="upload">
-                <p>Drag and drop or click to upload</p>
-                <input type="file" id="fileInput" name="fileInput" accept="image/png, image/jpeg">
+                <img src="./assets/images/icon-upload.svg" alt="upload" id="uploadImg">
+                <p id="dragZoneText" >Drag and drop or click to upload</p>
+                <div class="dargZoneBtns">
+                  <button id="removeImg" >Remove image</button>
+                  <button id="changeImg" >Change image</button>
+                </div>
+                <input required type="file" id="fileInput" name="fileInput" accept="image/png, image/jpeg">
               </div>
-              <div class="attentionNote">
+              <div class="attentionNote" id="fileError" >
                 <span class="attentionLogo">
                   <img src="assets/images/icon-info.svg" alt="info">
                 </span>
@@ -53,20 +57,26 @@
               <!-- EmailInputSection -->
               <div class="formGroup">
                 <label for="emailInput">Email Address</label>
-                <input placeholder="example@email.com" type="email" name="emailInput" id="emailInput">
+                <input required placeholder="example@email.com" type="email" name="emailInput" id="emailInput">
+                <div class="attentionNote" id="emailError">
+                  <span class="attentionLogo">
+                    <img src="assets/images/icon-info.svg" alt="info">
+                  </span>
+                  <span class="attentionText">Please enter a valid email address</span>
+                </div>
               </div>
               <!-- GitHubUsernameInputSection -->
               <div class="formGroup">
                 <label for="GitHubName">GitHun Username</label>
-                <input placeholder="@yourusername" type="email" name="GitHubName" id="GitHubName">
+                <input  placeholder="@yourusername" type="text" name="GitHubName" id="GitHubName">
               </div>
               <!-- SubmitBtn -->
-              <button class="btn">Generate My Ticket</button>
+              <button type="submit" class="btn">Generate My Ticket</button>
             </form>
           </div>
         </div>
       </div>
   </main>
-  <script  src="./js/main.js"></script>
+  <script type="module" defer src="./js/main.js"></script>
 </body>
 </html>
