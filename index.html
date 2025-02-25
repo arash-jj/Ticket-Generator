@@ -8,74 +8,71 @@
 </head>
 <body>
   <main>
-      <div class="contentWrapper">
-        <div class="contentContainer">
-          <!-- headerSection -->
-          <div class="header">
-            <!-- head-p1 -->
-              <div class="headerPartOne">
-                <img src="assets/images/logo-full.svg" alt="CodingConfImg">
-              </div>
-            <!-- head-p2 -->
-            <div class="headerPartTwo">
-              <span>
-                Your Journey to Coding Conf 2025 Start Here!
-              </span>
-            </div>
-            <!-- head-p3 -->
-            <div class="headerPartThree">
-              <p>
-                Secure your spot at next year's biggest coding conference.
-              </p>
-            </div>
+    <!-- gettingInformation -->
+    <!-- headerSection -->
+    <div class="header">
+      <!-- head-p1 -->
+        <div class="headerPartOne">
+          <img src="assets/images/logo-full.svg" alt="CodingConfImg">
+        </div>
+      <!-- head-p2 -->
+      <div class="headerPartTwo">
+        <span>
+          Your Journey to Coding Conf 2025 Start Here!
+        </span>
+      </div>
+      <!-- head-p3 -->
+      <div class="headerPartThree">
+        <p>
+          Secure your spot at next year's biggest coding conference.
+        </p>
+      </div>
+    </div>
+    <!-- formSection -->
+    <div class="formContainer">
+      <form autocomplete="off" action="#">
+        <!-- UploadAvatarSection -->
+        <label for="fileInput">Upload Avatar</label>
+        <div class="dropZone">
+          <img src="./assets/images/icon-upload.svg" alt="upload" id="uploadImg">
+          <p id="dragZoneText" >Drag and drop or click to upload</p>
+          <div class="dargZoneBtns">
+            <button id="removeImg" >Remove image</button>
+            <button id="changeImg" >Change image</button>
           </div>
-          <!-- formSection -->
-          <div class="formContainer">
-            <form autocomplete="off" action="#">
-              <!-- UploadAvatarSection -->
-              <label for="fileInput">Upload Avatar</label>
-              <div class="dropZone">
-                <img src="./assets/images/icon-upload.svg" alt="upload" id="uploadImg">
-                <p id="dragZoneText" >Drag and drop or click to upload</p>
-                <div class="dargZoneBtns">
-                  <button id="removeImg" >Remove image</button>
-                  <button id="changeImg" >Change image</button>
-                </div>
-                <input required type="file" id="fileInput" name="fileInput" accept="image/png, image/jpeg">
-              </div>
-              <div class="attentionNote" id="fileError" >
-                <span class="attentionLogo">
-                  <img src="assets/images/icon-info.svg" alt="info">
-                </span>
-                <span class="attentionText">Upload your photo(JPG or PNG,max size: 500KB).</span>
-              </div>
-              <!-- NameInputSection -->
-              <div class="formGroup">
-                <label for="nameInput">Full Name</label>
-                <input type="text" name="nameInput" id="nameInput">
-              </div>
-              <!-- EmailInputSection -->
-              <div class="formGroup">
-                <label for="emailInput">Email Address</label>
-                <input required placeholder="example@email.com" type="email" name="emailInput" id="emailInput">
-                <div class="attentionNote" id="emailError">
-                  <span class="attentionLogo">
-                    <img src="assets/images/icon-info.svg" alt="info">
-                  </span>
-                  <span class="attentionText">Please enter a valid email address</span>
-                </div>
-              </div>
-              <!-- GitHubUsernameInputSection -->
-              <div class="formGroup">
-                <label for="GitHubName">GitHun Username</label>
-                <input  placeholder="@yourusername" type="text" name="GitHubName" id="GitHubName">
-              </div>
-              <!-- SubmitBtn -->
-              <button type="submit" class="btn">Generate My Ticket</button>
-            </form>
+          <input required type="file" id="fileInput" name="fileInput" accept="image/png, image/jpeg">
+        </div>
+        <div class="attentionNote" id="fileError" >
+          <span class="attentionLogo">
+            <img src="assets/images/icon-info.svg" alt="info">
+          </span>
+          <span class="attentionText">Upload your photo(JPG or PNG,max size: 500KB).</span>
+        </div>
+        <!-- NameInputSection -->
+        <div class="formGroup">
+          <label for="nameInput">Full Name</label>
+          <input type="text" name="nameInput" id="nameInput">
+        </div>
+        <!-- EmailInputSection -->
+        <div class="formGroup">
+          <label for="emailInput">Email Address</label>
+          <input required placeholder="example@email.com" type="email" name="emailInput" id="emailInput">
+          <div class="attentionNote" id="emailError">
+            <span class="attentionLogo">
+              <img src="assets/images/icon-info.svg" alt="info">
+            </span>
+            <span class="attentionText">Please enter a valid email address</span>
           </div>
         </div>
-      </div>
+        <!-- GitHubUsernameInputSection -->
+        <div class="formGroup">
+          <label for="GitHubName">GitHun Username</label>
+          <input  placeholder="@yourusername" type="text" name="GitHubName" id="GitHubName">
+        </div>
+        <!-- SubmitBtn -->
+        <button type="submit" class="btn">Generate My Ticket</button>
+      </form>
+    </div>
   </main>
   <script type="module" defer src="./js/main.js"></script>
 </body>

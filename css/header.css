@@ -12,4 +12,5 @@
 .headerPartThree{
     font-size: 1.2rem;
     color: var(--Neutral500);
+    margin-top: 10px;
 }

@@ -1,3 +1,6 @@
+import { ticketDisplay } from "./ticketGenerator.js"
+const header = document.querySelector(".header")
+const formContainer = document.querySelector(".formContainer")
 const from = document.querySelector("form")
 const dropZone = document.querySelector(".dropZone")
 const fileInput = document.querySelector("#fileInput")
@@ -10,6 +13,8 @@ const uploadImg = document.querySelector("#uploadImg")
 const dragZoneText = document.querySelector("#dragZoneText")
 const removeBtn = document.querySelector("#removeImg")
 const changeBtn = document.querySelector("#changeImg")
+let uploadedImg
+export let isImageUploaded = false
 // uploadImgValidation
 dropZone.addEventListener("click",()=>{fileInput.click()})
 // dragDropHandel
@@ -40,16 +45,19 @@ function handleFiles(files) {
         if (!validTypes.includes(file.type) || file.size > maxSize) {
             fileError.classList.add("error")
         }
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            // Get the Data URL of the selected image
+            const imageUrl = e.target.result;
+            uploadedImg = imageUrl
+            uploadImg.src = uploadedImg;
+        };
+        isImageUploaded = true
+        // Read the image as a Data URL
+        reader.readAsDataURL(file);
         // FileReplacing
-        let imageUploaded = false
-        if(uploadImg.src){
-            URL.revokeObjectURL(uploadImg.src)
-            imageUploaded = true
-        }
-        const objectURL = URL.createObjectURL(file)
-        uploadImg.src = objectURL;
         uploadImg.style.display = 'block';
-        if(imageUploaded){
+        if(isImageUploaded){
             dragZoneText.style.display = "none"
             document.querySelector(".dargZoneBtns").style.display = "block"
             removeBtn.addEventListener("click",(e)=>{
@@ -67,7 +75,6 @@ function handleFiles(files) {
     }
 }
 // emailValidation
-
 emailInput.addEventListener("input",validateEmail)
 function validateEmail() {
     const email = emailInput.value.trim()
@@ -90,8 +97,8 @@ function isDisposableEmail(email) {
 }
 // savingInformation
 from.addEventListener("submit",(e)=>{
-    e.preventDefault();
-    const userImg = fileInput.value;
+    e.preventDefault()
+    const userImg = uploadedImg;
     const userName = nameInput.value;
     const userEmail = emailInput.value;
     const userGitHub = GitHubName.value;
@@ -103,5 +110,8 @@ from.addEventListener("submit",(e)=>{
     }
     if (userName !== "" && userGitHub !== "") {
         localStorage.setItem('user',JSON.stringify(userData))
+        header.style.display= "none"
+        formContainer.style.display= "none"
+        ticketDisplay()
     }
 })
