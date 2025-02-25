@@ -3,3 +3,15 @@
 @import url("./header.css");
 @import url("./form.css");
 @import url("./ticket.css");
+
+/* Responsive */
+/* Xl size */
+@import url('./media/xl.css') screen and (max-width:1440px);
+/* LG size */
+@import url('./media/lg.css') screen and (min-width:1024px) and (max-width:1280px);
+/* MD size */
+@import url('./media/MD.css') screen and (min-width:768px) and (max-width:1024px);
+/* SM size */
+@import url('./media/SM.css') screen and (min-width:568px) and (max-width:768px);
+/* XS size */
+@import url('./media/XS.css') screen and (max-width:568px);
