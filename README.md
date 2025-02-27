@@ -6,7 +6,7 @@ A dynamic ticket generation system for events, concerts, and reservations. Creat
 ## Features ✨
 
 - 🎨 Customizable ticket templates
-- 📄 Dynamic data input (names, dates, seats)
+- 📄 Dynamic data input (name, date, email, picture, country, city)
 - 📱 Responsive design
 
 ## Technologies Used 🛠️
