@@ -1,0 +1,41 @@
+main{
+    background-image: 
+    url("../../../assets/images/pattern-lines.svg"),
+    url("../../../assets/images/pattern-squiggly-line-bottom-desktop.svg"),
+    url("../../../assets/images/pattern-squiggly-line-top.svg"),
+    url("../../../assets/images/pattern-circle.svg"),
+    url("../../../assets/images/pattern-circle.svg"),
+    url("../../../assets/images/background-desktop.png")
+    ;
+    background-position: 
+    top center,
+    bottom left,
+    top 10px right,
+    left 50px top -80px,
+    bottom 20% right 23%,
+    center
+    ;
+    background-repeat: 
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat
+    ;
+    background-size: 
+    auto auto,
+    625px 300px,
+    346px 208px,
+    150px 150px,
+    150px 150px,
+    100% 100%
+    ;
+}
+.ticket{
+    background: url("../../../assets/images/pattern-ticket.svg");
+    background-repeat: no-repeat;
+    background-size: 600px 280px;
+    background-clip: padding-box;
+    background-position: center;
+}

@@ -6,7 +6,7 @@
     margin-block: 10px 15px;
 }
 .headerPartTwo{
-    font-size: 3.4rem;
+    font-size: 3rem;
     color: var(--Neutral0);
     display: flex;
     justify-content: center;
@@ -16,7 +16,7 @@
     max-width: 800px;
 }
 .headerPartThree{
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: var(--Neutral500);
     margin-top: 10px;
 }

@@ -57,24 +57,17 @@ function generateTicketContent(values, date, city, country) {
         <!-- head-p2 -->
         <div class="headerPartTwo">
             <span>
-                <span class="line">
-                    Congrats, 
-                    <span id="UsernameText" > ${values[1]}</span>
-                </span>
-                <span class="line">
-                    Your ticket is ready.
-                </span>
+                Congrats, <span id="UsernameText" > ${values[1]}! </span>Your ticket is ready.
             </span>
         </div>
         <!-- head-p3 -->
         <div class="headerPartThree" >
             <p id="emailSentText">
-                <span class="line">We've emailed your ticket to </span>
+                <span>We've emailed your ticket to </span>
                 <span class="line">
-                <span id="UserEmailText" >${values[2]}</span>
-                and will send updates in 
+                    <span id="UserEmailText" >${values[2]}</span> and will send updates in 
+                    the run to event
                 </span>
-                <span class="line">the run to event</span>
             </p>
         </div>
         </div>
